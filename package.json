@@ -1,0 +1,27 @@
+{
+  "name": "kanji-pdf-generator",
+  "version": "1.0.0",
+  "description": "This is the source code that generates PDF files. The directory structure is as follows:",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node kanjivg.js && node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matteobruni/kanji-pdf-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matteobruni/kanji-pdf-generator/issues"
+  },
+  "homepage": "https://github.com/matteobruni/kanji-pdf-generator#readme",
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "p-queue": "^7.3.0",
+    "pdf-merger-js": "^4.2.0",
+    "puppeteer": "^19.4.1",
+    "yargs": "^17.6.2"
+  }
+}
