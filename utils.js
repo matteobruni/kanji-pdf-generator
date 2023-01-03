@@ -4,7 +4,8 @@ import path from 'path'
 const config = {
   srcDir: 'sources',
   outDir: 'build',
-  templateAbsolutePath: path.relative('/', 'template/page.html'),
+  templateAbsolutePath: path.resolve(path.join('template', 'page.html')),
+  singleTemplateAbsolutePath: path.resolve(path.join('template', 'single.html')),
 }
 
 const ensureDirectories = (...dirNames) => {

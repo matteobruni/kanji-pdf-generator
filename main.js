@@ -32,7 +32,7 @@ async function generatePDFs(sourceName, group) {
                 logger.start(`Group ${sourceGroup} for ${sourceName}`);
                 const outputFilePath = path.join(pdfOutputDir, sourceName, sourceGroup);
                 if (!dryRun) {
-                    await generatePDF(
+                    await generatePagePDF(
                         data.slice(index, index + group),
                         outputFilePath,
                         generatePageTitle(sourceName, sourceGroup)
@@ -50,7 +50,7 @@ async function generatePDFs(sourceName, group) {
                 logger.start(`File ${inputFilePath} for ${sourceName}`);
                 const data = readSourceFile(inputFilePath);
                 if (!dryRun) {
-                    await generatePDF(
+                    await generatePagePDF(
                         data,
                         outputFilePath,
                         generatePageTitle(sourceName, sourceGroup)
@@ -64,7 +64,7 @@ async function generatePDFs(sourceName, group) {
     }
 }
 
-async function generatePDF(data, outputFilePath, pageTitle) {
+async function generatePagePDF(data, outputFilePath, pageTitle) {
     const tempDirPath = path.join(outputFilePath, 'pages');
     ensureDirectories(outputFilePath, tempDirPath);
 

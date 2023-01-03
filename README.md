@@ -14,6 +14,7 @@ This is the source code that generates PDF files. The directory structure is as 
     ├── wanikani
     ├── template
     │   └── page.html           # HTML page template
+    |   └── single.html         # HTML single page template
     └── main.js                 # Generator script
 
 The `main.js` script reads source files from `frequency`, `grade`, `jlpt` & `wanikani` directories, downloads the SVG
