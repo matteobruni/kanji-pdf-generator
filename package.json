@@ -20,7 +20,7 @@
   "dependencies": {
     "adm-zip": "^0.5.10",
     "p-queue": "^7.3.0",
-    "pdf-merger-js": "^4.2.0",
+    "pdf-merger-js": "^5.0.0",
     "puppeteer": "^21.0.0",
     "yargs": "^17.6.2"
   }
