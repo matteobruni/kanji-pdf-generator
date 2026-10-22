@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/matteobruni/kanji-pdf-generator#readme",
   "dependencies": {
-    "adm-zip": "^0.5.10",
+    "adm-zip": "^0.6.0",
     "p-queue": "^7.3.0",
     "pdf-merger-js": "^5.0.0",
     "puppeteer": "^21.0.0",
