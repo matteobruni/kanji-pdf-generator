@@ -22,6 +22,6 @@
     "p-queue": "^7.3.0",
     "pdf-merger-js": "^5.0.0",
     "puppeteer": "^21.0.0",
-    "yargs": "^17.6.2"
+    "yargs": "^18.0.0"
   }
 }
